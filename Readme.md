@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Иван Бойко](https://up.htmlacademy.ru/adaptive/22/user/1628253).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
