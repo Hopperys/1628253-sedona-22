@@ -29,7 +29,7 @@
         </ul>
       </nav>
       <div class="page-header__intro page-header__intro--form">
-        <img class="page-header__img page-header__img--form" width="229" height="39" src="img/form-intro.svg" alt="Интро сайта Седона">
+        <img class="page-header__img" width="229" height="39" src="img/form-intro.svg" alt="Интро сайта Седона">
       </div>
     </header>
     <main class="page-main">
@@ -43,67 +43,67 @@
         <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
           <fieldset class="fieldset-name form__fieldset">
             <legend class="legend-title fieldset-name__title">Представьтесь:</legend>
-            <label class="label-text form__label-text">
+            <label class="label-text fieldset-name__label">
               <span>Имя*:</span>
               <input class="label-text__input" type="text" name="name" placeholder="Петр" required>
             </label>
-            <label class="label-text form__label-text">
+            <label class="label-text fieldset-name__label">
               <span>Фамилия*:</span>
               <input class="label-text__input" type="text" name="second" placeholder="Иванов" required>
             </label>
-            <label class="label-text form__label-text">
+            <label class="label-text fieldset-name__label">
               <span>Отчество:</span>
               <input class="label-text__input" type="text" name="middle" placeholder="Александрович">
             </label>
           </fieldset>
           <fieldset class="fieldset-contacts form__fieldset">
             <legend class="legend-title fieldset-contacts__title">Контактная информация:</legend>
-            <label class="label-text label-text--phone form__phone">
+            <label class="label-text label-text--phone fieldset-contacts__phone">
               <span>Контактный телефон*:</span>
               <input class="label-text__input" type="tel" name="phone" placeholder="Введите телефон" required>
             </label>
-            <label class="label-text label-text--email form__email" for="email">
+            <label class="label-text label-text--email fieldset-contacts__email" for="email">
               <span>Электронная почта*:</span>
               <input class="label-text__input" type="email" name="email" placeholder="Введите e-mail" required>
             </label>
           </fieldset>
           <fieldset class="fieldset-impression form__fieldset">
             <legend class="legend-title fieldset-impression__title">Ваше общее впечатление:</legend>
-            <label class="choice form__radio">
+            <label class="choice fieldset-impression__radio">
               <input class="choice__radio" type="radio" name="impression" value="positive" checked>
               <span>Скорее положительное</span>
             </label>
-            <label class="choice form__radio">
+            <label class="choice fieldset-impression__radio">
               <input class="choice__radio" type="radio" name="impression" value="negative">
               <span>Скорее отрицательное</span>
               </label>
-            <label class="choice form__radio">
+            <label class="choice fieldset-impression__radio">
               <input class="choice__radio" type="radio" name="impression" value="unsure">
               <span>Затрудняюсь ответить</span>
             </label>
           </fieldset>
           <fieldset class="fieldset-visited form__fieldset">
             <legend class="legend-title fieldset-visited__title">Посещенные достопримечательности:</legend>
-            <label class="choice choice--checkbox form__checkbox">
+            <label class="choice choice--checkbox fieldset-visited__checkbox">
               <input class="choice__checkbox" type="checkbox" name="attractions" value="bridge" checked>
               <span>Мост Дьявола</span>
             </label>
-            <label class="choice choice--checkbox form__checkbox">
+            <label class="choice choice--checkbox fieldset-visited__checkbox">
               <input class="choice__checkbox" type="checkbox" name="attractions" value="bell" checked>
               <span>Гора-Колокол</span>
             </label>
-            <label class="choice choice--checkbox form__checkbox">
+            <label class="choice choice--checkbox fieldset-visited__checkbox">
               <input class="choice__checkbox" type="checkbox" name="attractions" value="park" checked>
               <span>Слайд-парк</span>
             </label>
-            <label class="choice choice--checkbox form__checkbox">
+            <label class="choice choice--checkbox fieldset-visited__checkbox">
               <input class="choice__checkbox" type="checkbox" name="attractions" value="rocks">
               <span>Красные скалы</span>
             </label>
           </fieldset>
           <fieldset class="fieldset-review form__fieldset">
             <legend class="legend-title fieldset-review__title">Опишите свои эмоции:</legend>
-            <textarea class="review form__review" name="review" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="review fieldset-review__textarea" name="review" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="form__button button" type="submit">Отправить отзыв</button>
           <p class="form__text">* — обязательные поля</p>
