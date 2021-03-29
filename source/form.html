@@ -7,7 +7,7 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__logo">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
         </a>
       </div>
@@ -18,7 +18,7 @@
             <a class="main-navbar__link" href="index.html">Главная</a>
           </li>
           <li class="main-navbar__item">
-            <a class="main-navbar__link" href="photo.html">Фото и видео</a>
+            <a class="main-navbar__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-navbar__item">
             <a class="main-navbar__link">Форма отзыва</a>
@@ -40,6 +40,7 @@
         </div>
       </header>
       <section class="feedback">
+        <h2 class="visually-hidden">Оставьте свой отзыв</h2>
         <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
           <fieldset class="fieldset-name form__fieldset">
             <legend class="legend-title fieldset-name__title">Представьтесь:</legend>
@@ -62,7 +63,7 @@
               <span>Контактный телефон*:</span>
               <input class="label-text__input" type="tel" name="phone" placeholder="Введите телефон" required>
             </label>
-            <label class="label-text label-text--email fieldset-contacts__email" for="email">
+            <label class="label-text label-text--email fieldset-contacts__email">
               <span>Электронная почта*:</span>
               <input class="label-text__input" type="email" name="email" placeholder="Введите e-mail" required>
             </label>
@@ -121,7 +122,7 @@
             <a class="socials__link socials__link--fb" href="#" aria-label="Мы в Фейсбуке"></a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--inst" href="#" aria-label="Мы в Ютубе"></a>
+            <a class="socials__link socials__link--youtube" href="#" aria-label="Мы в Ютубе"></a>
           </li>
         </ul>
         <p class="page-footer__copyright copyright">
