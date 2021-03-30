@@ -58,10 +58,10 @@
 .reasons__item {
   background-color: $bg-color-additional;
   color: $font-color-additional;
-}
 
-.reasons__item:last-of-type .reasons__text {
-  &--additional {
-    border-bottom: none;
+  &:last-of-type .reasons__text {
+    &--additional {
+      border-bottom: none;
+    }
   }
 }
