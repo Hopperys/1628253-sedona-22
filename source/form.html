@@ -58,13 +58,13 @@
           </fieldset>
           <fieldset class="fieldset-contacts form__fieldset">
             <legend class="legend-title fieldset-contacts__title">Контактная информация:</legend>
-            <label class="label-text label-text--phone fieldset-contacts__phone">
-              <span>Контактный телефон*:</span>
-              <input class="label-text__input" type="tel" name="phone" placeholder="Введите телефон" required>
+            <label class="label-text label-text--phone fieldset-contacts__label">
+              <span class="label-text__span label-text__span--contacts">Контактный телефон*:</span>
+              <input class="label-text__input label-text__input--contacts" type="tel" name="phone" placeholder="Введите телефон" required>
             </label>
-            <label class="label-text label-text--email fieldset-contacts__email">
-              <span>Электронная почта*:</span>
-              <input class="label-text__input" type="email" name="email" placeholder="Введите e-mail" required>
+            <label class="label-text label-text--email fieldset-contacts__label">
+              <span class="label-text__span label-text__span--contacts">Электронная почта*:</span>
+              <input class="label-text__input label-text__input--contacts" type="email" name="email" placeholder="Введите e-mail" required>
             </label>
           </fieldset>
           <fieldset class="fieldset-impression form__fieldset">
@@ -103,7 +103,7 @@
           </fieldset>
           <fieldset class="fieldset-review form__fieldset">
             <legend class="legend-title fieldset-review__title">Опишите свои эмоции:</legend>
-            <textarea class="review fieldset-review__textarea" name="review" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="review-textarea fieldset-review__textarea" name="review" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="form__button button" type="submit">Отправить отзыв</button>
           <p class="form__text">* — обязательные поля</p>
