@@ -1,0 +1,29 @@
+.page-header {
+  position: relative;
+  margin: 0 auto;
+  max-width: $mobile-width;
+  background-color: $white;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 109px;
+}
+
+.page-header__intro {
+  background-image: url("../img/bg-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-header__img {
+  display: block;
+  margin: 0 auto;
+
+  &--index {
+    padding-top: 90px;
+    padding-bottom: 85px;
+    width: 282px;
+    height: 214px;
+  }
+}

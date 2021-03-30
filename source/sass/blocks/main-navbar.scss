@@ -1,0 +1,35 @@
+.main-navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navbar__burger {
+  width: 23px;
+  height: 22px;
+  margin-left: 277px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.main-navbar__list {
+  @include list-reset;
+  margin-top: 24px;
+}
+
+.main-navbar__item {
+  text-transform: uppercase;
+  max-width: $mobile-width;
+}
+
+.main-navbar__link {
+  display: inline-flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: $white;
+  width: $mobile-width;
+  background-color: $bg-button;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}

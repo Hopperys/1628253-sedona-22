@@ -1,1 +1,15 @@
-// Начните писать стили здесь
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixin.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-navbar.scss";
+@import "blocks/logo.scss";
+@import "blocks/page-main.scss";
+@import "blocks/reasons.scss";
+@import "blocks/tips.scss";
+@import "blocks/contact-us.scss";
+@import "blocks/button.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/socials.scss";
+@import "blocks/visually-hidden.scss";

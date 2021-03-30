@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a class="logo">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
-        </a>
-      </div>
+      <a class="logo page-header__logo">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+      </a>
       <nav class="main-navbar">
         <button class="main-navbar__burger" aria-label="Показать меню" type="button"></button>
         <ul class="main-navbar__list">
@@ -36,7 +35,7 @@
       <header class="page-main__header">
         <div class="page-main__wrapper">
           <h1 class="page-main__title page-main__title--index">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="page-main__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <p class="page-main__text">Рассмотрим 5 причин, по которым Седона&nbsp;круче, чем Гранд Каньон!</p>
         </div>
       </header>
       <section class="reasons">
@@ -48,9 +47,7 @@
               <p class="reasons__counter">— №1 —</p>
               <p class="reasons__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="reasons__image">
-              <img class="reasons__img" src="img/photo-city-mobile@1x.jpg" alt="Фотография города Седона">
-            </div>
+            <img class="reasons__img" width="320" height="260" src="img/photo-city-mobile@1x.jpg" alt="Фотография города Седона">
           </div>
           <ul class="tips">
             <li class="tips__item tips__item--home">
@@ -63,7 +60,7 @@
             </li>
             <li class="tips__item tips__item--food">
               <h3 class="tips__title">Еда</h3>
-              <p class="tips__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="tips__text">Всегда заказывайте фирменный&nbsp;бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
           <div class="reasons__main">
@@ -72,25 +69,23 @@
               <p class="reasons__counter">— №2 —</p>
               <p class="reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="reasons__image">
-              <img class="reasons__img" src="img/photo-bridge-mobile@1x.jpg" alt="Фотография моста дьявола">
-            </div>
+            <img class="reasons__img" width="320" height="260" src="img/photo-bridge-mobile@1x.jpg" alt="Фотография моста дьявола">
           </div>
           <ul class="reasons__main reasons__list">
             <li class="reasons__description reasons__item">
               <h3 class="reasons__title reasons__title--additional">Небольшая площадь</h3>
               <p class="reasons__counter reasons__counter--additional">— №3 —</p>
-              <p class="reasons__text reasons__text--additional">Все интересные места находятся очень близко</p>
+              <p class="reasons__text reasons__text--additional">Все интересные места находятся очень&nbsp;близко</p>
             </li>
             <li class="reasons__description reasons__item">
               <h3 class="reasons__title reasons__title--additional">Красивая дорога</h3>
               <p class="reasons__counter reasons__counter--additional">— №4 —</p>
-              <p class="reasons__text reasons__text--additional">Ехать в седону из лас-вегаса совсем не скучно!</p>
+              <p class="reasons__text reasons__text--additional">Ехать в седону из лас-вегаса совсем&nbsp;не&nbsp;скучно!</p>
             </li>
             <li class="reasons__description reasons__item">
               <h3 class="reasons__title reasons__title--additional">Мало туристов</h3>
               <p class="reasons__counter reasons__counter--additional">— №5 —</p>
-              <p class="reasons__text reasons__text--additional">Большинство едет в гранд каньони толпится там</p>
+              <p class="reasons__text reasons__text--additional">Большинство едет в гранд каньон и&nbsp;толпится там</p>
             </li>
           </ul>
         </div>
@@ -98,9 +93,9 @@
       <section class="contact-us">
         <div class="contact-us__wrapper">
           <h2 class="visually-hidden">Как с нами связаться?</h2>
-          <div class="contact-us__wrap">
+          <div class="contact-us__inner">
             <h3 class="contact-us__title">Заинтересовались?</h3>
-            <p class="contact-us__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <p class="contact-us__text">Укажите предполагаемые даты поездки,&nbsp;и&nbsp;мы&nbsp;покажем вам лучшие предложения&nbsp;гостиниц в седоне</p>
             <a class="contact-us__link button" href="search.html">Найти гостиницу</a>
           </div>
           <div class="contact-us__map"></div>
@@ -112,17 +107,17 @@
         <p class="page-footer__slogan">#visitsedona</p>
         <ul class="page-footer__socials socials">
           <li class="socials__item">
-            <a class="socials__link socials__link--vk" href="#" aria-label="Мы Вконтакте"></a>
+            <a class="button socials__link socials__link--vk" href="#" aria-label="Мы Вконтакте">VK</a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--fb" href="#" aria-label="Мы в Фейсбуке"></a>
+            <a class="button socials__link socials__link--fb" href="#" aria-label="Мы в Фейсбуке">FB</a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="#" aria-label="Мы в Ютубе"></a>
+            <a class="button socials__link socials__link--youtube" href="#" aria-label="Мы в Ютубе">UT</a>
           </li>
         </ul>
-        <p class="page-footer__copyright copyright">
-          Разработано <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт htmlacademy"></a>
+        <p class="page-footer__copyright">
+          Разработано <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт htmlacademy"></a>
         </p>
       </div>
     </footer>
