@@ -1,0 +1,16 @@
+.button {
+  color: $white;
+  background-color: $bg-button;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
+  &:hover, &:focus {
+    background-color: $bg-button-hover;
+  }
+
+  &:active {
+    background-color: $bg-button-active;
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+}
