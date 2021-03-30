@@ -1,0 +1,25 @@
+.tips {
+  @include list-reset;
+}
+
+.tips__item {
+  margin-left: 70px;
+  margin-top: 26px;
+  &--home {
+    margin-top: 35px;
+  }
+  &--food {
+    margin-bottom: 35px;
+  }
+}
+
+.tips__title {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.tips__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: $font-color-additional;
+}
