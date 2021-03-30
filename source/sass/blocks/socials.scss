@@ -1,0 +1,14 @@
+.socials {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  margin-right: 6px;
+}
+
+.socials__link {
+  width: 46px;
+  height: 48px;
+}

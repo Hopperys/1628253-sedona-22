@@ -1,4 +1,17 @@
 .page-footer__wrapper {
   margin: 0 auto;
   max-width: $mobile-width;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-footer__slogan {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.page-footer__copyright {
+  font-size: 14px;
+  line-height: 26px;
 }
