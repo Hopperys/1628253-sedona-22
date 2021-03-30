@@ -14,6 +14,10 @@
 .page-header__intro {
   background-image: url("../img/bg-mobile.jpg");
   background-repeat: no-repeat;
+
+  &--form {
+    background-position: bottom;
+  }
 }
 
 .page-header__img {
@@ -25,5 +29,10 @@
     padding-bottom: 85px;
     width: 282px;
     height: 214px;
+  }
+
+  &--form {
+    padding-top: 52px;
+    padding-bottom: 67px;
   }
 }
