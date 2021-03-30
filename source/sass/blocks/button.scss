@@ -5,7 +5,8 @@
   font-size: 21px;
   line-height: 26px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $bg-button-hover;
   }
 
