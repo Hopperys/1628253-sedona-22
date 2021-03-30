@@ -1,0 +1,37 @@
+.label-text {
+  display: flex;
+  font-size: 14px;
+  line-height: 26px;
+  color: $font-color-additional;
+  text-transform: uppercase;
+
+  &--phone,
+  &--email {
+    flex-direction: column;
+  }
+}
+
+.label-text__span {
+  margin-top: 15px;
+}
+
+.label-text__input {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  padding-left: 22px;
+  background-color: $input-color;
+  border: none;
+
+  &--name {
+    flex-grow: 2;
+    margin-left: 14px;
+  }
+
+  &::placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+  }
+}
