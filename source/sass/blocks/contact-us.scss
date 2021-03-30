@@ -1,6 +1,6 @@
 .contact-us__wrapper {
   margin: 0 auto;
-  max-width: 320px;
+  max-width: $mobile-width;
   text-align: center;
   text-transform: uppercase;
 }
@@ -19,6 +19,7 @@
 
 .contact-us__link {
   display: inline-block;
+  vertical-align: middle;
   padding-left: 39px;
   padding-right: 37px;
   padding-top: 14px;
