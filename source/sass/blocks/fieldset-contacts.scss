@@ -6,12 +6,12 @@
 .fieldset-contacts__label {
   margin-left: 18px;
   margin-right: 18px;
+
+  &:last-of-type {
+    margin-bottom: 14px;
+  }
 }
 
 .fieldset-contacts__label .span {
   margin-left: 42px;
-}
-
-.fieldset-contacts__label:last-of-type {
-  margin-bottom: 14px;
 }
