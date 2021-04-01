@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  margin: 0 auto;
   background-color: $white;
   max-width: $mobile-width;
 
@@ -16,6 +17,14 @@
   position: absolute;
   top: 0;
   left: 109px;
+
+  @media (min-width: $tablet-width) {
+    left: 334px;
+  }
+
+  @media (min-width: $desctop-width) {
+    left: 507px;
+  }
 }
 
 .page-header__intro {
