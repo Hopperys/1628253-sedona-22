@@ -2,6 +2,14 @@
   margin: 0 auto;
   max-width: $mobile-width;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: $desctop-width;
+  }
 }
 
 .reasons__main {
@@ -9,10 +17,14 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .reasons__description {
-  display: inline-block;
+  display: block;
   background-color: $bg-button;
 
   &--first {
@@ -23,6 +35,15 @@
   &--second {
     padding-top: 39px;
     padding-bottom: 35px;
+    order: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 256px;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 400px;
   }
 }
 
@@ -58,6 +79,7 @@
 .reasons__item {
   background-color: $bg-color-additional;
   color: $font-color-additional;
+  margin-top: 0;
 
   &:last-of-type .reasons__text {
     &--additional {
