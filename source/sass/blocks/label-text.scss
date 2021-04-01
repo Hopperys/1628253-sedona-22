@@ -21,14 +21,18 @@
 }
 
 .label-text__input {
-  padding-top: 22px;
-  padding-bottom: 21px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   padding-left: 22px;
   background-color: $input-color;
   border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 
   &--name {
-    flex-grow: 2;
+    flex-grow: 1;
     margin-left: 14px;
   }
 
@@ -38,10 +42,6 @@
   }
 
   &::placeholder {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
     color: $black;
   }
 }
