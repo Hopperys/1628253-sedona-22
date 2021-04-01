@@ -1,0 +1,60 @@
+.fieldset__title {
+  padding-top: 20px;
+
+  &--contacts {
+    margin-bottom: 14px;
+  }
+
+  &--impression {
+    margin-bottom: 25px;
+  }
+
+  &--visited {
+    margin-bottom: 17px;
+  }
+
+  &--review {
+    margin-bottom: 15px;
+  }
+}
+
+.fieldset__label {
+
+  &--name {
+    margin-top: 20px;
+
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--contacts {
+    margin-left: 18px;
+    margin-right: 18px;
+
+    &:last-of-type {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.fieldset__radio {
+  margin-bottom: 21px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &:last-of-type {
+    margin-bottom: 31px;
+  }
+}
+
+.fieldset__checkbox {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.fieldset__textarea {
+  margin-left: 20px;
+  margin-right: 20px;
+}
