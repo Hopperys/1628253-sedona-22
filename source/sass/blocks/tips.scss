@@ -1,5 +1,16 @@
 .tips {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .tips__item {

@@ -1,5 +1,6 @@
 .reasons__wrapper {
   max-width: $mobile-width;
+  margin: 0 auto;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
