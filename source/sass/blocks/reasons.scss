@@ -1,5 +1,4 @@
 .reasons__wrapper {
-  margin: 0 auto;
   max-width: $mobile-width;
   text-transform: uppercase;
 
@@ -24,7 +23,7 @@
 }
 
 .reasons__description {
-  display: block;
+  display: inline-block;
   background-color: $bg-button;
 
   &--first {
@@ -39,11 +38,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 256px;
+    width: 256px;
   }
 
   @media (min-width: $desctop-width) {
-    max-width: 400px;
+    width: 400px;
   }
 }
 
@@ -54,6 +53,10 @@
   &--additional {
     color: $black;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .reasons__text {
@@ -63,6 +66,10 @@
     margin-right: 20px;
     padding-bottom: 24px;
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 }
 
@@ -85,5 +92,11 @@
     &--additional {
       border-bottom: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 63px;
+    border-bottom: none;
   }
 }
