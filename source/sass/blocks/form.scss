@@ -9,10 +9,10 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid $border-color;
-}
 
-.form__fieldset:last-of-type {
-  border-bottom: none;
+  &:last-of-type {
+    border-bottom: none;
+  }
 }
 
 .form__button {
