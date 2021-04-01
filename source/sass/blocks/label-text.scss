@@ -1,0 +1,47 @@
+.label-text {
+  display: flex;
+  font-size: 14px;
+  line-height: 26px;
+  color: $font-color-additional;
+  text-transform: uppercase;
+
+  &--phone,
+  &--email {
+    flex-direction: column;
+  }
+}
+
+.label-text__span {
+  margin-top: 15px;
+
+  &--contacts {
+    margin-top: 0;
+    margin-left: 22px;
+  }
+}
+
+.label-text__input {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  background-color: $input-color;
+  border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &--name {
+    flex-grow: 1;
+    margin-left: 14px;
+  }
+
+  &--contacts {
+    margin-top: 6px;
+    margin-bottom: 14px;
+  }
+
+  &::placeholder {
+    color: $black;
+  }
+}

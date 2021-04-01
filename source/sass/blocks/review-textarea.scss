@@ -1,0 +1,17 @@
+.review-textarea {
+  width: 254px;
+  height: 143px;
+  resize: none;
+  padding-top: 13px;
+  padding-left: 21px;
+  border: none;
+  background-color: $input-color;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::placeholder {
+    color: $black;
+  }
+}
