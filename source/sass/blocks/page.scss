@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   min-width: $mobile-width;
+  max-width: $desctop-width;
 
   a {
     text-decoration: none;

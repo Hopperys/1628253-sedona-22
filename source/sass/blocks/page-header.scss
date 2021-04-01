@@ -1,7 +1,7 @@
 .page-header {
+  display: block;
   position: relative;
   margin: 0 auto;
-  max-width: $mobile-width;
   background-color: $white;
 }
 
@@ -18,11 +18,21 @@
   &--form {
     background-position: bottom;
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-tablet.jpg");
+    background-position: top;
+  }
+
+  @media (min-width: $desctop-width) {
+    background-image: url("../img/bg-desktop.jpg");
+  }
 }
 
 .page-header__img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 
   &--index {
     padding-top: 90px;
