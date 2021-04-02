@@ -1,6 +1,6 @@
 .review-textarea {
-  width: 254px;
-  height: 143px;
+  width: 256px;
+  height: 145px;
   resize: none;
   padding-top: 13px;
   padding-left: 21px;
@@ -13,5 +13,13 @@
 
   &::placeholder {
     color: $black;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 625px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 937px;
   }
 }
