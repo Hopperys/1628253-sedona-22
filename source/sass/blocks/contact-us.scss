@@ -3,12 +3,31 @@
   max-width: $mobile-width;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: $desctop-width;
+  }
+}
+
+.contact-us__inner {
+  @media (min-width: $tablet-width) {
+    max-width: 435px;
+    margin: 0 auto;
+  }
 }
 
 .contact-us__title {
   font-size: 21px;
   line-height: 26px;
   margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .contact-us__text {
@@ -18,12 +37,15 @@
 }
 
 .contact-us__link {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 39px;
-  padding-right: 37px;
+  display: inline-flex;
+  justify-content: center;
+  width: 280px;
   padding-top: 14px;
   padding-bottom: 15px;
   margin-top: 13px;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

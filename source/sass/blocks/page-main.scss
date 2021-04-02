@@ -7,6 +7,10 @@
 .page-main__wrapper {
   margin: 0 auto;
   max-width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+  }
 }
 
 .page-main__title {
@@ -15,6 +19,10 @@
   &--index {
     margin-top: 32px;
     margin-bottom: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
   }
 }
 
@@ -28,5 +36,13 @@
     border-bottom: 1px solid $border-color;
     padding-bottom: 16px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 41px;
   }
 }
