@@ -52,6 +52,20 @@
       justify-content: space-between;
     }
   }
+
+  &--visited {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desctop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
 }
 
 .fieldset__title {
