@@ -31,10 +31,6 @@
   background-image: url("../img/bg-mobile.jpg");
   background-repeat: no-repeat;
 
-  &--form {
-    background-position: bottom;
-  }
-
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-tablet.jpg");
     background-position: top;
@@ -42,6 +38,14 @@
 
   @media (min-width: $desctop-width) {
     background-image: url("../img/bg-desktop.jpg");
+  }
+
+  &--form {
+    background-position: bottom;
+
+    @media (min-width: $tablet-width) {
+      background-position: bottom;
+    }
   }
 }
 
@@ -60,5 +64,10 @@
   &--form {
     padding-top: 52px;
     padding-bottom: 67px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 95px;
+      padding-bottom: 120px;
+    }
   }
 }
