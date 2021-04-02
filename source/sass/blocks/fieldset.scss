@@ -1,16 +1,24 @@
 .fieldset {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     &--name {
       order: 2;
+      margin-right: 60px;
+      padding-left: 30px;
     }
 
     &--contacts {
       order: 3;
       grid-column: 1/-1;
+      margin-right: 60px;
     }
 
     &--impression {
       order: 1;
+      border-right: 1px solid $border-color;
+      padding-left: 50px;
+      padding-right: 30px;
     }
 
     &--visited {
@@ -21,6 +29,27 @@
     &--review {
       order: 5;
       grid-column: 1/-1;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &--name {
+      margin-left: 79px;
+    }
+
+    &--contacts {
+      margin-right: 0;
+    }
+  }
+}
+
+.fieldset__inner {
+  @media (min-width: $desctop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &--contacts {
+      justify-content: space-between;
     }
   }
 }
@@ -60,6 +89,21 @@
 
     &:last-of-type {
       margin-bottom: 14px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
+      margin-right: 0;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 78px;
+
+      &:last-of-type {
+        margin-bottom: 78px;
+      }
     }
   }
 }

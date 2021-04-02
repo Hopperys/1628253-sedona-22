@@ -8,6 +8,12 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto auto auto auto;
   }
+
+  @media (min-width: $desctop-width) {
+    max-width: $desctop-width;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 }
 
 .form__fieldset {
