@@ -54,3 +54,19 @@
     color: $black;
   }
 }
+
+.label-text__phone {
+  &--long {
+    @media (min-width: $desctop-width) {
+      display: none;
+    }
+  }
+
+  &--short {
+    display: none;
+
+    @media (min-width: $desctop-width) {
+      display: block;
+    }
+  }
+}
