@@ -1,3 +1,30 @@
+.fieldset {
+  @media (min-width: $tablet-width) {
+    &--name {
+      order: 2;
+    }
+
+    &--contacts {
+      order: 3;
+      grid-column: 1/-1;
+    }
+
+    &--impression {
+      order: 1;
+    }
+
+    &--visited {
+      order: 4;
+      grid-column: 1/-1;
+    }
+
+    &--review {
+      order: 5;
+      grid-column: 1/-1;
+    }
+  }
+}
+
 .fieldset__title {
   padding-top: 20px;
 

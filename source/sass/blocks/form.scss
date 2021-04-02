@@ -1,6 +1,13 @@
 .form {
   margin: 0 auto;
   max-width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    max-width: $tablet-width;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto auto;
+  }
 }
 
 .form__fieldset {
@@ -24,8 +31,17 @@
   margin-bottom: 48px;
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
 }
 
 .form__text {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 6;
+  }
 }
