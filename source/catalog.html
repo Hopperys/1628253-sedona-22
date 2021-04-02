@@ -7,11 +7,9 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a class="logo" href="index.html">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
-        </a>
-      </div>
+      <a class="logo page-header__logo">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+      </a>
       <nav class="main-navbar">
         <button class="main-navbar__burger" aria-label="Показать меню" type="button"></button>
         <ul class="main-navbar__list">
@@ -30,7 +28,7 @@
         </ul>
       </nav>
       <div class="page-header__intro page-header__intro--form">
-        <img class="page-header__img" width="282" height="214" src="img/form-intro.svg" alt="Интро сайта Седона">
+        <img class="page-header__img page-header__img--form" width="229" height="39" src="img/form-intro.svg" alt="Интро сайта Седона">
       </div>
     </header>
     <main class="page-main">
@@ -43,60 +41,68 @@
       <section class="gallery">
         <div class="gallery__wrapper">
           <h2 class="visually-hidden">Галерея фотографий Седоны</h2>
-          <article class="photo">
-            <h3 class="visually-hidden">Виды седоны</h3>
-            <a class="photo__link" href="#">
-              <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Красивый закат">
-            </a>
-            <div class="photo__info">
-              <p class="photo__title">неродные просторы</p>
-              <p class="photo__author">Автор фото: Борис</p>
-            </div>
-            <div class="like photo__like">
-              <button class="like__button" type="button" aria-label="Мне нравится"></button>
-              <span class="like__counter">1350</span>
-            </div>
-          </article>
-          <article class="photo">
-            <h3 class="visually-hidden">Виды седоны</h3>
-            <a class="photo__link" href="#">
-              <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная флора">
-            </a>
-            <div class="photo__info">
-              <p class="photo__title">Местная растительность</p>
-              <p class="photo__author">Автор фото: Сергей</p>
-            </div>
-            <div class="like photo__like">
-              <button class="like__button" type="button" aria-label="Мне нравится"></button>
-              <span class="like__counter">143</span>
+          <article class="photo gallery__photo">
+            <div class="photo__inner">
+              <h3 class="visually-hidden">Виды седоны</h3>
+              <a class="photo__link" href="#">
+                <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Красивый закат">
+              </a>
+              <div class="photo__info">
+                <p class="photo__title">неродные просторы</p>
+                <p class="photo__author">Автор фото: Борис</p>
+              </div>
+              <div class="like photo__like">
+                <button class="like__button" type="button" aria-label="Мне нравится"></button>
+                <span class="like__counter">1350</span>
+              </div>
             </div>
           </article>
-          <article class="photo">
-            <h3 class="visually-hidden">Виды седоны</h3>
-            <a class="photo__link" href="#">
-              <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога в лесу">
-            </a>
-            <div class="photo__info">
-              <p class="photo__title">Дорога на север</p>
-              <p class="photo__author">Автор фото: Петр</p>
-            </div>
-            <div class="like photo__like">
-              <button class="like__button" type="button" aria-label="Мне нравится"></button>
-              <span class="like__counter">96</span>
+          <article class="photo gallery__photo">
+            <div class="photo__inner">
+              <h3 class="visually-hidden">Виды седоны</h3>
+              <a class="photo__link" href="#">
+                <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная флора">
+              </a>
+              <div class="photo__info">
+                <p class="photo__title">Местная растительность</p>
+                <p class="photo__author">Автор фото: Сергей</p>
+              </div>
+              <div class="like photo__like">
+                <button class="like__button" type="button" aria-label="Мне нравится"></button>
+                <span class="like__counter">143</span>
+              </div>
             </div>
           </article>
-          <article class="photo">
-            <h3 class="visually-hidden">Виды седоны</h3>
-            <a class="photo__link" href="#">
-              <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
-            </a>
-            <div class="photo__info">
-              <p class="photo__title">Мост дьявола</p>
-              <p class="photo__author">Автор фото: Антон</p>
+          <article class="photo gallery__photo">
+            <div class="photo__inner">
+              <h3 class="visually-hidden">Виды седоны</h3>
+              <a class="photo__link" href="#">
+                <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога в лесу">
+              </a>
+              <div class="photo__info">
+                <p class="photo__title">Дорога на север</p>
+                <p class="photo__author">Автор фото: Петр</p>
+              </div>
+              <div class="like photo__like">
+                <button class="like__button" type="button" aria-label="Мне нравится"></button>
+                <span class="like__counter">96</span>
+              </div>
             </div>
-            <div class="like photo__like">
-              <button class="like__button" type="button" aria-label="Мне нравится"></button>
-              <span class="like__counter">254</span>
+          </article>
+          <article class="photo gallery__photo">
+            <div class="photo__inner">
+              <h3 class="visually-hidden">Виды седоны</h3>
+              <a class="photo__link" href="#">
+                <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+              </a>
+              <div class="photo__info">
+                <p class="photo__title">Мост дьявола</p>
+                <p class="photo__author">Автор фото: Антон</p>
+              </div>
+              <div class="like photo__like">
+                <button class="like__button" type="button" aria-label="Мне нравится"></button>
+                <span class="like__counter">254</span>
+              </div>
             </div>
           </article>
         </div>
@@ -106,7 +112,7 @@
           <h2 class="visually-hidden">Видео про Седону</h2>
           <div class="video__desc">
             <p class="video__title">Все еще сомневаетесь?</p>
-            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <p class="video__text">Смотрите видеопрезентацию и скорее&nbsp;за&nbsp;билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="player video__player">
             <img src="img/video-mobile.jpg" width="320" height="201" alt="Здесь должен быть видео плеер.">
@@ -127,17 +133,17 @@
         <p class="page-footer__slogan">#visitsedona</p>
         <ul class="page-footer__socials socials">
           <li class="socials__item">
-            <a class="socials__link socials__link--vk" href="#" aria-label="Мы Вконтакте"></a>
+            <a class="button socials__link socials__link--vk" href="#" aria-label="Мы Вконтакте">VK</a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--fb" href="#" aria-label="Мы в Фейсбуке"></a>
+            <a class="button socials__link socials__link--fb" href="#" aria-label="Мы в Фейсбуке">FB</a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="#" aria-label="Мы в Ютубе"></a>
+            <a class="button socials__link socials__link--youtube" href="#" aria-label="Мы в Ютубе">UT</a>
           </li>
         </ul>
-        <p class="page-footer__copyright copyright">
-          Разработано <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт htmlacademy"></a>
+        <p class="page-footer__copyright">
+          Разработано <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт htmlacademy"></a>
         </p>
       </div>
     </footer>

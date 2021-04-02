@@ -1,0 +1,9 @@
+.gallery__wrapper {
+  margin: 0 auto;
+  max-width: $mobile-width;
+}
+
+.gallery__photo {
+  margin-top: 22px;
+  border-bottom: 1px solid $border-color;
+}
