@@ -1,4 +1,9 @@
 .logo {
   width: 102px;
   height: 84px;
+
+  @media (min-width: $desctop-width) {
+    width: 187px;
+    height: 96px;
+  }
 }
