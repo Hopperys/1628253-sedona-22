@@ -41,7 +41,7 @@
   }
 
   &:first-child .main-navbar__link {
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
 
     @media (min-width: $tablet-width) {
       box-shadow: none;
