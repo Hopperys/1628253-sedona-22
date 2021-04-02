@@ -24,6 +24,10 @@
   font-size: 21px;
   line-height: 26px;
   margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .contact-us__text {
