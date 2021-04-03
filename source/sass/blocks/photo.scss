@@ -1,6 +1,17 @@
 .photo {
   font-size: 14px;
   line-height: 24px;
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/-1;
+      column-gap: 0;
+    }
+  }
+}
+
+.photo__img {
+  display: block;
 }
 
 .photo__title {
@@ -14,9 +25,35 @@
   margin-bottom: 0;
 }
 
-.photo__inner {
+.photo__wrapper {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.photo__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: $input-color;
+  }
+
+  &--dark {
+    @media (min-width: $tablet-width) {
+      background-color: $bg-photo-additional;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    display: block;
+    background-color: rgba($black, 0.3);
+    color: $white;
+    margin-top: -105px;
+  }
 }
 
 .photo__like {
