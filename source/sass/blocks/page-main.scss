@@ -24,6 +24,12 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+  }
 }
 
 .page-main__text {
@@ -36,6 +42,10 @@
     border-bottom: 1px solid $border-color;
     padding-bottom: 16px;
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
