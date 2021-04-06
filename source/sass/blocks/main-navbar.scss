@@ -46,7 +46,7 @@
 
 .main-navbar--closed .main-navbar__list {
   @media (max-width: $mobile-width-only) {
-    display: none
+    display: none;
   }
 }
 
@@ -75,7 +75,7 @@
 }
 
 .main-navbar--nojs .main-navbar__burger {
-  display: none
+  display: none;
 }
 
 .main-navbar__list {
