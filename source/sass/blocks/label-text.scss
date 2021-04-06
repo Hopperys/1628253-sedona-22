@@ -8,6 +8,10 @@
   &--phone,
   &--email {
     flex-direction: column;
+
+    @media (min-width: $desctop-width) {
+      flex-direction: row;
+    }
   }
 }
 
@@ -17,6 +21,11 @@
   &--contacts {
     margin-top: 0;
     margin-left: 22px;
+
+    @media (min-width: $desctop-width) {
+      margin-top: 19px;
+      margin-right: 17px;
+    }
   }
 }
 
@@ -43,5 +52,21 @@
 
   &::placeholder {
     color: $black;
+  }
+}
+
+.label-text__phone {
+  &--long {
+    @media (min-width: $desctop-width) {
+      display: none;
+    }
+  }
+
+  &--short {
+    display: none;
+
+    @media (min-width: $desctop-width) {
+      display: block;
+    }
   }
 }
