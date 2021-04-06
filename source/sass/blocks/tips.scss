@@ -11,20 +11,21 @@
 
 .tips__item {
   margin-left: 70px;
-  margin-top: 26px;
+  margin-top: 10px;
 
   &--home {
-    margin-top: 35px;
+    margin-top: 28px;
   }
 
   &--food {
-    margin-bottom: 35px;
+    margin-bottom: 18px;
   }
 }
 
 .tips__title {
   font-size: 18px;
   line-height: 26px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;

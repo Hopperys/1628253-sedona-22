@@ -64,6 +64,12 @@
     padding-bottom: 85px;
     width: 282px;
     height: 214px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 78px;
+      width: 461px;
+      height: 349px;
+    }
   }
 
   &--form {

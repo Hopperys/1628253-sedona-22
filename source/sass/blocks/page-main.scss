@@ -18,7 +18,11 @@
 
   &--index {
     margin-top: 32px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 50px;
+    }
   }
 
   @media (min-width: $tablet-width) {

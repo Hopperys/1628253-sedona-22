@@ -52,16 +52,16 @@
 
 .main-navbar--opened .main-navbar__burger {
   position: absolute;
-  top: 17px;
-  right: 20px;
+  top: 15px;
+  right: 32px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    width: 23px;
+    width: 27px;
     height: 4px;
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   &::before {
