@@ -8,10 +8,7 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <a class="logo page-header__logo">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
-      </a>
-      <nav class="main-navbar">
+      <nav class="main-navbar main-navbar--closed main-navbar--nojs page-header__navbar">
         <button class="main-navbar__burger" aria-label="Показать меню" type="button"></button>
         <ul class="main-navbar__list">
           <li class="main-navbar__item">
@@ -28,6 +25,9 @@
           </li>
         </ul>
       </nav>
+      <a class="logo page-header__logo">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+      </a>
       <div class="page-header__intro page-header__intro--index">
         <img class="page-header__img page-header__img--index" width="282" height="214" src="img/index-intro.svg" alt="Интро сайта Седона">
       </div>
@@ -122,5 +122,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="js/navbar.js"></script>
   </body>
 </html>
