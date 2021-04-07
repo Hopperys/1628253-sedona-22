@@ -1,17 +1,27 @@
-.page-footer__wrapper {
+.page-footer {
+  background-color: $white;
   margin: 0 auto;
   max-width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: $desctop-width;
+  }
+}
+
+.page-footer__wrapper {
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
     display: flex;
     justify-content: space-around;
   }
 
   @media (min-width: $desctop-width) {
-    max-width: $desctop-width;
     justify-content: space-between;
   }
 }
@@ -20,6 +30,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 0;
 
   @media (min-width: $desctop-width) {
     margin-left: 120px;
@@ -30,6 +41,7 @@
   font-size: 14px;
   line-height: 26px;
   margin-top: 10px;
+  margin-bottom: 0;
 
   @media (min-width: $desctop-width) {
     margin-right: 120px;

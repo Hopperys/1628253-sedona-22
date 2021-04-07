@@ -1,26 +1,17 @@
 .contact-us__wrapper {
-  margin: 0 auto;
-  max-width: $mobile-width;
   text-align: center;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-  }
-
-  @media (min-width: $desctop-width) {
-    max-width: $desctop-width;
-  }
 }
 
 .contact-us__title {
   font-size: 21px;
   line-height: 26px;
-  margin-top: 33px;
+  padding-top: 33px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-top: 58px;
+    padding-top: 58px;
   }
 }
 

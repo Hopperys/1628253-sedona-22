@@ -1,15 +1,5 @@
 .reasons__wrapper {
-  max-width: $mobile-width;
-  margin: 0 auto;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-  }
-
-  @media (min-width: $desctop-width) {
-    max-width: $desctop-width;
-  }
 }
 
 .reasons__main {
