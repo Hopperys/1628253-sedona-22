@@ -14,4 +14,8 @@
     background-color: $bg-button-active;
     color: rgba($white, 0.3);
   }
+
+  &:disabled {
+    background-color: $bg-disabled;
+  }
 }

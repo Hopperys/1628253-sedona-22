@@ -5,6 +5,11 @@
   font-family: "PT Sans", "Arial", sans-serif;
   min-width: $mobile-width;
   max-width: $desctop-width;
+  background-color: $white;
+
+  @media (min-width: $desctop-width) {
+    padding: 0 40px;
+  }
 
   a {
     text-decoration: none;
