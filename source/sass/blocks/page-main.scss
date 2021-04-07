@@ -23,6 +23,11 @@
     @media (min-width: $tablet-width) {
       margin-top: 50px;
     }
+
+    @media (min-width: $desctop-width) {
+      margin-top: 61px;
+      margin-bottom: 32px;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -24,6 +24,11 @@
       margin-left: 36px;
     }
 
+    @media (min-width: $desctop-width) {
+      max-width: 282px;
+      margin-left: 58px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -40,6 +45,11 @@
         left: 54px;
         top: 31px;
       }
+
+      @media (min-width: $tablet-width) {
+        left: 102px;
+        top: 28px;
+      }
     }
   }
 
@@ -49,6 +59,11 @@
       order: 2;
       margin-right: 30px;
       margin-top: 28px;
+    }
+
+    @media (min-width: $desctop-width) {
+      max-width: 195px;
+      margin-right: 100px;
     }
 
     &::before {
@@ -81,6 +96,12 @@
       margin-top: 28px;
     }
 
+    @media (min-width: $desctop-width) {
+      max-width: 300px;
+      margin-left: 28px;
+      margin-top: 25px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -98,12 +119,20 @@
         top: 32px;
         background-size: cover;
       }
+
+      @media (min-width: $tablet-width) {
+        left: 109px;
+      }
     }
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 128px;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 66px;
   }
 }
 
