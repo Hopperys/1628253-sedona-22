@@ -16,7 +16,7 @@
   position: relative;
 
   &--home {
-    margin-top: 28px;
+    margin-top: 30px;
 
     @media (min-width: $tablet-width) {
       max-width: 185px;
@@ -46,7 +46,7 @@
         top: 31px;
       }
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $desctop-width) {
         left: 102px;
         top: 28px;
       }
@@ -120,7 +120,7 @@
         background-size: cover;
       }
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $desctop-width) {
         left: 109px;
       }
     }
