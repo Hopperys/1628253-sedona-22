@@ -45,11 +45,18 @@
 
   @media (min-width: $desctop-width) {
     &--name {
-      margin-left: 79px;
+      margin-right: 120px;
+      padding-left: 80px;
     }
 
     &--contacts {
-      margin-right: 0;
+      margin-left: 120px;
+      margin-right: 120px;
+      padding-bottom: 0;
+    }
+
+    &--impression {
+      margin-left: 120px;
     }
   }
 }
@@ -95,6 +102,10 @@
     @media (min-width: $tablet-width) {
       margin-top: 34px;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 85px;
+    }
   }
 }
 
@@ -121,6 +132,12 @@
       padding-left: 56px;
       padding-right: 60px;
     }
+
+    @media (min-width: $desctop-width) {
+      margin-left: 284px;
+      padding-left: 56px;
+      padding-right: 60px;
+    }
   }
 
   &--impression {
@@ -130,6 +147,10 @@
       margin-bottom: 58px;
       padding-top: 0;
       text-align: left;
+    }
+
+    @media (min-width: $desctop-width) {
+      padding-left: 80px;
     }
   }
 
@@ -185,8 +206,6 @@
     }
 
     @media (min-width: $desctop-width) {
-      margin-left: 0;
-      margin-right: 0;
       margin-bottom: 78px;
 
       &:last-of-type {

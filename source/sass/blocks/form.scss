@@ -11,8 +11,7 @@
 
   @media (min-width: $desctop-width) {
     max-width: $desctop-width;
-    margin-left: 120px;
-    margin-right: 120px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

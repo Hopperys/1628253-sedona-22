@@ -22,6 +22,10 @@
 
     @media (min-width: $desctop-width) {
       flex-direction: row;
+
+      &::after {
+        bottom: 0;
+      }
     }
   }
 
@@ -31,6 +35,12 @@
       background-image: url("../img/icons/phone.svg");
       background-repeat: no-repeat;
       background-position: center center;
+    }
+
+    @media (min-width: $desctop-width) {
+      &::after {
+        right: 80px;
+      }
     }
   }
 
@@ -45,6 +55,10 @@
     @media (min-width: $tablet-width) {
       margin-top: 10px;
     }
+
+    @media (min-width: $desctop-width) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -58,6 +72,10 @@
     @media (min-width: $desctop-width) {
       margin-top: 19px;
       margin-right: 17px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-left: 0;
     }
   }
 }
@@ -81,6 +99,12 @@
   &--contacts {
     margin-top: 10px;
     margin-bottom: 11px;
+
+    @media (min-width: $desctop-width) {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 257px;
+    }
   }
 
   &::placeholder {
