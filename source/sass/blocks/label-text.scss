@@ -86,6 +86,19 @@
   &::placeholder {
     color: $black;
   }
+
+  &:hover {
+    background-color: $bg-disabled;
+  }
+
+  &:focus {
+    background: $white;
+    border: 4px solid $bg-disabled;
+    box-sizing: border-box;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    outline: none;
+  }
 }
 
 .label-text__phone {
