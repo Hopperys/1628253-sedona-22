@@ -34,6 +34,10 @@
   margin-top: 0;
   margin-bottom: 34px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 34px;
+  }
+
   @media (min-width: $desctop-width) {
     margin-left: 120px;
   }
@@ -44,6 +48,10 @@
   line-height: 26px;
   margin-top: 34px;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+  }
 
   @media (min-width: $desctop-width) {
     margin-right: 120px;
