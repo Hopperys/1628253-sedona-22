@@ -12,7 +12,7 @@
     &--name {
       order: 2;
       margin-right: 60px;
-      padding-left: 30px;
+      padding-left: 58px;
     }
 
     &--contacts {
@@ -23,9 +23,8 @@
 
     &--impression {
       order: 1;
-      border-right: 1px solid $border-color;
-      padding-left: 50px;
-      padding-right: 30px;
+      margin-left: 60px;
+      padding-bottom: 82px;
     }
 
     &--visited {
@@ -73,10 +72,28 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
+
+  &--impression {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      border-right: 1px solid $border-color;
+      padding-right: 30px;
+    }
+  }
 }
 
 .fieldset__title {
   padding-top: 20px;
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      margin-bottom: 35px;
+      text-align: left;
+    }
+  }
 
   &--contacts {
     margin-bottom: 14px;
@@ -84,6 +101,12 @@
 
   &--impression {
     margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 58px;
+      padding-top: 0;
+      text-align: left;
+    }
   }
 
   &--visited {
@@ -135,8 +158,17 @@
   margin-left: 98px;
   margin-top: 12px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    margin-left: 78px;
+  }
+
   &:last-of-type {
     margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 15px;
+    }
   }
 }
 
