@@ -5,10 +5,21 @@
 }
 
 .socials__item {
-  margin-right: 6px;
+  margin-right: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
 }
 
 .socials__link {
+  display: inline-flex;
   width: 46px;
   height: 48px;
+  justify-content: center;
+  align-items: center;
+
+  &:active {
+    fill-opacity: 0.3;
+  }
 }

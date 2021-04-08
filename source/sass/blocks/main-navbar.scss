@@ -1,28 +1,89 @@
 .main-navbar {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .main-navbar__burger {
+  position: absolute;
+  display: block;
   width: 23px;
   height: 22px;
-  margin-left: 277px;
-  margin-top: 17px;
-  margin-bottom: 17px;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-navbar--closed .main-navbar__burger {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 0;
+    left: 0;
+    background-color: $bg-button;
+    box-shadow: 0 8px 0 0 $bg-button, 0 16px 0 0 $bg-button;
+  }
+}
+
+.main-navbar--closed .main-navbar__list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-navbar--opened .main-navbar__burger {
+  position: absolute;
+  top: 15px;
+  right: 32px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 4px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-navbar--nojs .main-navbar__burger {
+  display: none;
 }
 
 .main-navbar__list {
   @include list-reset;
-  margin-top: 24px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0;
   }
 }
 

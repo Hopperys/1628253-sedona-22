@@ -6,25 +6,140 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     text-align: center;
+    justify-content: space-between;
   }
 }
 
 .tips__item {
   margin-left: 70px;
-  margin-top: 26px;
+  margin-top: 10px;
+  position: relative;
 
   &--home {
-    margin-top: 35px;
+    margin-top: 30px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 185px;
+      order: 0;
+      margin-left: 36px;
+    }
+
+    @media (min-width: $desctop-width) {
+      max-width: 282px;
+      margin-left: 58px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -48px;
+      width: 39px;
+      height: 37px;
+      background-image: url("../img/icons/house.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 75px;
+        height: 72px;
+        left: 54px;
+        top: 31px;
+      }
+
+      @media (min-width: $desctop-width) {
+        left: 102px;
+        top: 28px;
+      }
+    }
+  }
+
+  &--souvenir {
+    @media (min-width: $tablet-width) {
+      max-width: 193px;
+      order: 2;
+      margin-right: 30px;
+      margin-top: 28px;
+    }
+
+    @media (min-width: $desctop-width) {
+      max-width: 195px;
+      margin-right: 100px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: -46px;
+      width: 32px;
+      height: 38px;
+      background-image: url("../img/icons/gift.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 64px;
+        height: 75px;
+        left: 62px;
+        top: 27px;
+        background-size: cover;
+      }
+    }
   }
 
   &--food {
-    margin-bottom: 35px;
+    margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 155px;
+      order: 1;
+      margin-left: 72px;
+      margin-top: 28px;
+    }
+
+    @media (min-width: $desctop-width) {
+      max-width: 300px;
+      margin-left: 28px;
+      margin-top: 25px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: -52px;
+      width: 40px;
+      height: 35px;
+      background-image: url("../img/icons/burger.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 76px;
+        height: 68px;
+        left: 39px;
+        top: 32px;
+        background-size: cover;
+      }
+
+      @media (min-width: $desctop-width) {
+        left: 109px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 128px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 66px;
   }
 }
 
 .tips__title {
   font-size: 18px;
   line-height: 26px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
