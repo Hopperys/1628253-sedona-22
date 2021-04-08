@@ -16,7 +16,7 @@
 }
 
 .label-text__span {
-  margin-top: 15px;
+  margin-top: 17px;
 
   &--contacts {
     margin-top: 0;
@@ -41,8 +41,8 @@
   line-height: 26px;
 
   &--name {
-    flex-grow: 1;
     margin-left: 14px;
+    width: 100%;
   }
 
   &--contacts {
