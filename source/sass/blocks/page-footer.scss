@@ -1,13 +1,9 @@
-.page-footer__wrapper {
+.page-footer {
   margin: 0 auto;
   max-width: $mobile-width;
-  text-align: center;
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
-    display: flex;
-    justify-content: space-between;
   }
 
   @media (min-width: $desctop-width) {
@@ -15,29 +11,60 @@
   }
 }
 
+.page-footer__wrapper {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: $desctop-width) {
+    justify-content: space-between;
+  }
+}
+
 .page-footer__slogan {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 0;
 
-  @media (min-width: $tablet-width) {
-    margin-left: 45px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-left: 104px;
+  @media (min-width: $desctop-width) {
+    margin-left: 120px;
   }
 }
 
 .page-footer__copyright {
   font-size: 14px;
   line-height: 26px;
+  margin-top: 10px;
+  margin-bottom: 0;
 
-  @media (min-width: $tablet-width) {
-    margin-right: 60px;
+  @media (min-width: $desctop-width) {
+    margin-right: 120px;
+  }
+}
+
+.page-footer__link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.page-footer__svg {
+  margin-left: 12px;
+  padding-top: 6px;
+  fill: $black;
+
+  &:focus,
+  &:hover {
+    fill: $bg-button-hover;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-right: 120px;
+  &:active {
+    fill: rgba($black, 0.3);
   }
 }

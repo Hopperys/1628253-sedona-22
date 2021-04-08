@@ -1,15 +1,5 @@
 .reasons__wrapper {
-  max-width: $mobile-width;
-  margin: 0 auto;
   text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-  }
-
-  @media (min-width: $desctop-width) {
-    max-width: $desctop-width;
-  }
 }
 
 .reasons__main {
@@ -26,10 +16,24 @@
 .reasons__description {
   display: inline-block;
   background-color: $bg-button;
+  position: relative;
 
   &--first {
     padding-top: 55px;
     padding-bottom: 39px;
+
+    &::before {
+      @media (max-width: $mobile-width-only) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 37px;
+        left: 0;
+        top: -14px;
+        background-image: url("../img/intro/triangle-tips.svg");
+        background-repeat: no-repeat;
+      }
+    }
   }
 
   &--second {
@@ -40,36 +44,88 @@
 
   @media (min-width: $tablet-width) {
     width: 256px;
+    padding-top: 42px;
   }
 
   @media (min-width: $desctop-width) {
     width: 400px;
+    padding-top: 48px;
   }
 }
 
 .reasons__title {
   font-size: 18px;
   line-height: 26px;
+  margin-top: 4px;
+  margin-bottom: 0;
 
   &--additional {
     color: $black;
+    margin-top: 24px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    max-width: 150px;
+    margin: 0 auto;
   }
 }
 
+.reasons__counter {
+  margin-top: 11px;
+}
+
 .reasons__text {
+  margin-top: 18px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 192px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desctop-width) {
+    max-width: 280px;
+  }
+
+  &--second {
+    @media (min-width: $desctop-width) {
+      max-width: 230px;
+    }
+  }
+
   &--additional {
     border-bottom: 1px solid $border-color;
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 24px;
     margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 
     @media (min-width: $tablet-width) {
       border-bottom: none;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 30px;
+    }
+
+    @media (min-width: $desctop-width) {
+      max-width: 335px;
+      padding-bottom: 46px;
+    }
+  }
+
+  &--short {
+    @media (min-width: $tablet-width) {
+      max-width: 152px;
+      margin-left: 50px;
+    }
+
+    @media (min-width: $desctop-width) {
+      max-width: 335px;
+      margin-left: 30px;
     }
   }
 }
@@ -77,11 +133,11 @@
 .reasons__img {
   width: 320px;
   height: 260px;
+  display: block;
 }
 
 .reasons__list {
   @include list-reset;
-  margin-top: -6px;
 }
 
 .reasons__item {
@@ -96,8 +152,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 41px;
-    padding-bottom: 63px;
+    padding-top: 38px;
+    padding-bottom: 20px;
     border-bottom: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 16px;
   }
 }
