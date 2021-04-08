@@ -1,14 +1,21 @@
 .page {
   display: block;
-  margin: 0 auto;
   padding: 0;
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
-  min-width: $mobile-width;
-  max-width: $desctop-width;
   background-color: $input-color;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 
   a {
     text-decoration: none;
   }
+}
+
+.page__wrapper {
+  display: block;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  min-width: $mobile-width;
+  max-width: $desctop-width;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $white;
 }

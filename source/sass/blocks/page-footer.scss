@@ -1,5 +1,4 @@
 .page-footer {
-  background-color: $white;
   margin: 0 auto;
   max-width: $mobile-width;
 
@@ -15,10 +14,12 @@
 .page-footer__wrapper {
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 36px;
   }
 
   @media (min-width: $desctop-width) {
@@ -49,6 +50,7 @@
 }
 
 .page-footer__link {
+  display: inline-block;
   vertical-align: middle;
 }
 
