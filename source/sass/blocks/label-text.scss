@@ -8,9 +8,38 @@
   &--phone,
   &--email {
     flex-direction: column;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      background-color: $input-additional;
+      bottom: 11px;
+      right: 0;
+    }
 
     @media (min-width: $desctop-width) {
       flex-direction: row;
+    }
+  }
+
+  &--phone {
+    &::after {
+      content: "";
+      background-image: url("../img/icons/phone.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  &--email {
+    &::after {
+      content: "";
+      background-image: url("../img/icons/mail.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
     }
   }
 }
@@ -46,8 +75,8 @@
   }
 
   &--contacts {
-    margin-top: 6px;
-    margin-bottom: 14px;
+    margin-top: 10px;
+    margin-bottom: 11px;
   }
 
   &::placeholder {
