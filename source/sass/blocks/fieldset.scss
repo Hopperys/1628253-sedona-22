@@ -20,6 +20,7 @@
       grid-column: 1/-1;
       margin-right: 60px;
       padding-bottom: 50px;
+      margin-left: 60px;
     }
 
     &--impression {
@@ -31,6 +32,9 @@
     &--visited {
       order: 4;
       grid-column: 1/-1;
+      margin-right: 60px;
+      margin-left: 60px;
+      padding-bottom: 36px;
     }
 
     &--review {
@@ -67,6 +71,9 @@
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      margin-top: 84px;
+      margin-left: 78px;
+      margin-right: 55px;
     }
 
     @media (min-width: $desctop-width) {
@@ -93,6 +100,7 @@
 
 .fieldset__title {
   padding-top: 20px;
+  background-color: $white;
 
   &--name {
     @media (min-width: $tablet-width) {
@@ -107,7 +115,6 @@
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      background-color: white;
       padding-top: 0;
       margin-top: -10px;
       margin-left: 190px;
@@ -129,10 +136,29 @@
   &--visited {
     margin-bottom: 35px;
     padding-top: 16px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      padding-top: 0;
+      margin-top: -28px;
+      margin-left: 122px;
+      max-width: 308px;
+      padding-left: 46px;
+      padding-right: 46px;
+    }
   }
 
   &--review {
     margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      padding-top: 0;
+      margin-top: -11px;
+      margin-left: 182px;
+      padding-left: 76px;
+      padding-right: 80px;
+    }
   }
 }
 
@@ -154,7 +180,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-left: 60px;
+      margin-left: 0;
       margin-right: 0;
     }
 
@@ -196,9 +222,18 @@
   &:last-of-type {
     margin-bottom: 40px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .fieldset__textarea {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-top: 70px;
+  }
 }
