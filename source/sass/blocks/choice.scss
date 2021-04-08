@@ -11,9 +11,8 @@
     position: absolute;
     left: -80px;
     top: -20px;
-    width: 47px;
-    height: 47px;
-    border: 5px solid $input-color;
+    width: 57px;
+    height: 57px;
     border-radius: 50%;
     background-color: $input-color;
   }
@@ -28,5 +27,32 @@
     border-radius: 50%;
     border: 18px solid $input-color;
     background-color: $black;
+  }
+}
+
+.choice__checkbox + .choice__span {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -79px;
+    top: -15px;
+    width: 56px;
+    height: 56px;
+    background-color: $input-color;
+  }
+}
+
+.choice__checkbox:checked + .choice__span {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -79px;
+    top: -15px;
+    width: 56px;
+    height: 56px;
+    background-image: url("../img/icons/tick.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $input-color;
   }
 }

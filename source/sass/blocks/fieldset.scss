@@ -87,7 +87,8 @@
   }
 
   &--visited {
-    margin-bottom: 17px;
+    margin-bottom: 35px;
+    padding-top: 16px;
   }
 
   &--review {
@@ -140,9 +141,12 @@
 }
 
 .fieldset__checkbox {
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-bottom: 54px;
+  margin-left: 98px;
+
+  &:last-of-type {
+    margin-bottom: 40px;
+  }
 }
 
 .fieldset__textarea {
