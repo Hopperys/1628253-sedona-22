@@ -104,5 +104,12 @@
       width: 457px;
       height: 78px;
     }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 100px;
+      padding-bottom: 121px;
+      width: 460px;
+      height: 80px;
+    }
   }
 }

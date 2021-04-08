@@ -29,6 +29,10 @@
   font-size: 18px;
   margin-top: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
   &--index {
     padding-top: 32px;
     margin-bottom: 30px;
@@ -43,16 +47,16 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
-  }
-
   &--form {
     margin-top: 36px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
       margin-top: 70px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-top: 112px;
     }
   }
 }
