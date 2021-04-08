@@ -41,6 +41,10 @@
       background-repeat: no-repeat;
       background-position: center center;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 10px;
+    }
   }
 }
 
