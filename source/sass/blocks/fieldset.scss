@@ -58,6 +58,11 @@
     &--impression {
       margin-left: 120px;
     }
+
+    &--visited {
+      margin-left: 120px;
+      margin-right: 120px;
+    }
   }
 }
 
@@ -65,10 +70,6 @@
   @media (min-width: $desctop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    &--contacts {
-      justify-content: space-between;
-    }
   }
 
   &--visited {
@@ -84,7 +85,12 @@
     }
 
     @media (min-width: $desctop-width) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 80px;
+      margin-right: 0;
+      justify-content: space-between;
     }
   }
 
@@ -103,8 +109,9 @@
       margin-top: 34px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desctop-width) {
       margin-top: 85px;
+      justify-content: space-between;
     }
   }
 }
@@ -167,6 +174,10 @@
       padding-left: 46px;
       padding-right: 46px;
     }
+
+    @media (min-width: $desctop-width) {
+      margin-left: 280px;
+    }
   }
 
   &--review {
@@ -179,6 +190,10 @@
       margin-left: 182px;
       padding-left: 76px;
       padding-right: 80px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-left: 398px;
     }
   }
 }
@@ -245,6 +260,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desctop-width) {
+    margin-left: 0;
+  }
 }
 
 .fieldset__textarea {
@@ -254,5 +273,9 @@
   @media (min-width: $tablet-width) {
     margin-left: 60px;
     margin-top: 70px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-left: 120px;
   }
 }

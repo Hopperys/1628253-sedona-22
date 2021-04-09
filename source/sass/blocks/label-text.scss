@@ -13,8 +13,8 @@
     &::after {
       content: "";
       position: absolute;
-      width: 58px;
-      height: 58px;
+      width: 59px;
+      height: 59px;
       background-color: $input-additional;
       bottom: 11px;
       right: 0;
@@ -58,6 +58,10 @@
 
     @media (min-width: $desctop-width) {
       margin-top: 0;
+
+      &::after {
+        right: 1px;
+      }
     }
   }
 }
