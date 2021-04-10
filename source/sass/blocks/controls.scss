@@ -1,0 +1,17 @@
+.controls__button {
+  background-color: transparent;
+  border: none;
+
+  &--repeat {
+    margin-left: 20px;
+    margin-right: 116px;
+  }
+
+  &--fullscreen {
+    margin-left: 14px;
+  }
+}
+
+.controls__svg {
+  fill: $controls-color;
+}

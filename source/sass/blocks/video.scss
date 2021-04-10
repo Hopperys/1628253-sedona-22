@@ -25,6 +25,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -35,9 +36,12 @@
   font-size: 14px;
   line-height: 24px;
   color: $font-color-additional;
+  margin-top: 28px;
 }
 
 .video__player {
+  margin-top: 34px;
+
   @media (min-width: $tablet-width) {
     margin-left: 60px;
   }
@@ -51,4 +55,7 @@
   background-color: $input-color;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  margin-bottom: 78px;
 }

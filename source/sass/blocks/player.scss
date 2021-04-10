@@ -1,0 +1,36 @@
+.player {
+  position: relative;
+}
+
+.player__img {
+  display: block;
+}
+
+.player__inner {
+  width: 280px;
+  background-color: rgba($black, 0.6);
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.player__bar {
+  width: 235px;
+  height: 3px;
+  background-color: rgba($white, 0.2);
+  margin-top: 22px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.player__toggle {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: $white;
+  margin-left: 58px;
+  margin-top: -6px;
+}

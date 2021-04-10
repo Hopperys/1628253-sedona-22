@@ -23,6 +23,7 @@
 
 .photo__author {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .photo__wrapper {
@@ -69,6 +70,8 @@
 }
 
 .photo__like {
+  display: inline-block;
+  vertical-align: middle;
   margin-top: 10px;
-  margin-bottom: 21px;
+  margin-bottom: 14px;
 }
