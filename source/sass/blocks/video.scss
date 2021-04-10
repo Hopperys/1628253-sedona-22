@@ -70,4 +70,8 @@
     left: 69px;
     margin: 0;
   }
+
+  @media (min-width: $desctop-width) {
+    left: 220px;
+  }
 }

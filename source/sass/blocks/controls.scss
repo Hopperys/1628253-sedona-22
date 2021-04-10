@@ -9,6 +9,10 @@
     @media (min-width: $tablet-width) {
       margin-right: 457px;
     }
+
+    @media (min-width: $desctop-width) {
+      margin-right: 594px;
+    }
   }
 
   &--fullscreen {

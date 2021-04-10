@@ -20,6 +20,11 @@
     width: 648px;
     height: 93px;
   }
+
+  @media (min-width: $desctop-width) {
+    width: 800px;
+    margin: 0;
+  }
 }
 
 .player__bar {
@@ -35,6 +40,10 @@
     margin-left: 93px;
     margin-right: 0;
     width: 389px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 540px;
   }
 }
 
