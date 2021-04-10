@@ -8,4 +8,14 @@
   background-color: transparent;
   border: none;
   padding-left: 0;
+  cursor: pointer;
+}
+
+.like__svg {
+  fill: $black;
+  fill-opacity: 0.3;
+
+  @media (min-width: $desctop-width) {
+    fill: $white;
+  }
 }
