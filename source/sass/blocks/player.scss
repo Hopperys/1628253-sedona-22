@@ -15,6 +15,11 @@
   margin: 0 auto;
   left: 0;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 93px;
+  }
 }
 
 .player__bar {
@@ -24,6 +29,13 @@
   margin-top: 22px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-left: 93px;
+    margin-right: 0;
+    width: 389px;
+  }
 }
 
 .player__toggle {
@@ -33,4 +45,8 @@
   background-color: $white;
   margin-left: 58px;
   margin-top: -6px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 204px;
+  }
 }

@@ -45,6 +45,10 @@
     display: flex;
     justify-content: space-between;
     background-color: $input-color;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 17px;
   }
 
   &--dark {
@@ -56,7 +60,9 @@
   @media (min-width: $desctop-width) {
     background-color: inherit;
     color: $white;
-    margin-top: -73px;
+    margin-top: -80px;
+    padding-left: 0;
+    padding-right: 0;
 
     &::after {
       content: "";
@@ -74,4 +80,9 @@
   vertical-align: middle;
   margin-top: 10px;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 }

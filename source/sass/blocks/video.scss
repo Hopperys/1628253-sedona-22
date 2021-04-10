@@ -1,9 +1,11 @@
 .video__wrapper {
   margin: 0 auto;
   max-width: $mobile-width;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desctop-width) {
@@ -44,6 +46,8 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 74px;
   }
 
   @media (min-width: $desctop-width) {
@@ -58,4 +62,12 @@
   padding-top: 22px;
   padding-bottom: 19px;
   margin-bottom: 78px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    position: absolute;
+    bottom: 15px;
+    left: 69px;
+    margin: 0;
+  }
 }
