@@ -8,15 +8,66 @@
   &--phone,
   &--email {
     flex-direction: column;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      background-color: $input-additional;
+      bottom: 11px;
+      right: 0;
+    }
 
     @media (min-width: $desctop-width) {
       flex-direction: row;
+
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+
+  &--phone {
+    &::after {
+      content: "";
+      background-image: url("../img/icons/phone.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    @media (min-width: $desctop-width) {
+      &::after {
+        right: 80px;
+      }
+    }
+  }
+
+  &--email {
+    &::after {
+      content: "";
+      background-image: url("../img/icons/mail.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 10px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-top: 0;
+
+      &::after {
+        right: 1px;
+      }
     }
   }
 }
 
 .label-text__span {
-  margin-top: 15px;
+  margin-top: 17px;
 
   &--contacts {
     margin-top: 0;
@@ -25,6 +76,10 @@
     @media (min-width: $desctop-width) {
       margin-top: 19px;
       margin-right: 17px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-left: 0;
     }
   }
 }
@@ -41,17 +96,36 @@
   line-height: 26px;
 
   &--name {
-    flex-grow: 1;
     margin-left: 14px;
+    width: 100%;
   }
 
   &--contacts {
-    margin-top: 6px;
-    margin-bottom: 14px;
+    margin-top: 10px;
+    margin-bottom: 11px;
+
+    @media (min-width: $desctop-width) {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 257px;
+    }
   }
 
   &::placeholder {
     color: $black;
+  }
+
+  &:hover {
+    background-color: $bg-disabled;
+  }
+
+  &:focus {
+    background: $white;
+    border: 4px solid $bg-disabled;
+    box-sizing: border-box;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    outline: none;
   }
 }
 
