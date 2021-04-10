@@ -11,8 +11,7 @@
 
   @media (min-width: $desctop-width) {
     max-width: $desctop-width;
-    margin-left: 120px;
-    margin-right: 120px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -31,30 +30,43 @@
 .form__button {
   width: 280px;
   height: 58px;
-  border: none;
-  outline: none;
   margin-top: 51px;
-  margin-bottom: 48px;
+  margin-bottom: 76px;
   margin-left: 20px;
   margin-right: 20px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     order: 5;
     width: 324px;
+    margin-top: 58px;
+    margin-left: 60px;
+    margin-right: 0;
   }
 
   @media (min-width: $desctop-width) {
-    order: 5;
     width: 480px;
+    margin-left: 120px;
   }
 }
 
 .form__text {
   display: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: $font-color-additional;
 
   @media (min-width: $tablet-width) {
     display: block;
     order: 6;
     margin-top: 78px;
+    text-align: right;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 120px;
+    margin-top: 72px;
   }
 }

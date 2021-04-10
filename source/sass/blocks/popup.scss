@@ -1,0 +1,129 @@
+.popup {
+  width: $mobile-width;
+  position: fixed;
+  top: 220px;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  text-transform: uppercase;
+  text-align: center;
+
+  &--failure {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      width: 400px;
+      bottom: 343px;
+      top: auto;
+    }
+  }
+
+  &--success {
+    top: 250px;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      width: 640px;
+      bottom: 343px;
+      top: auto;
+    }
+  }
+
+  &--show {
+    display: block;
+  }
+}
+
+.popup__title {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 40px;
+
+  &--failure {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 40px;
+      max-width: 230px;
+      margin: 35px auto 25px auto;
+    }
+  }
+
+  &--success {
+    margin-top: 35px;
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+      margin-top: 49px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.popup__text {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 auto;
+  color: $font-color-additional;
+
+  &--failure {
+    max-width: 237px;
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 307px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &--success {
+    max-width: 220px;
+    margin-bottom: 46px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 444px;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.popup__button {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
+  &--failure {
+    width: 180px;
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      width: 272px;
+      margin-bottom: 49px;
+    }
+  }
+
+  &--success {
+    width: 280px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 458px;
+      margin-bottom: 44px;
+      margin-top: 44px;
+    }
+  }
+}
+
+.popup__inner {
+  background-color: $input-color;
+}
