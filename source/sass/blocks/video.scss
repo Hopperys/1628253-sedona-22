@@ -1,9 +1,11 @@
 .video__wrapper {
   margin: 0 auto;
   max-width: $mobile-width;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desctop-width) {
@@ -25,9 +27,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-top: 60px;
   }
 }
 
@@ -35,11 +39,20 @@
   font-size: 14px;
   line-height: 24px;
   color: $font-color-additional;
+  margin-top: 28px;
+
+  @media (min-width: $desctop-width) {
+    margin-top: 32px;
+  }
 }
 
 .video__player {
+  margin-top: 34px;
+
   @media (min-width: $tablet-width) {
     margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 74px;
   }
 
   @media (min-width: $desctop-width) {
@@ -51,4 +64,19 @@
   background-color: $input-color;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  margin-bottom: 78px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    position: absolute;
+    bottom: 15px;
+    left: 69px;
+    margin: 0;
+  }
+
+  @media (min-width: $desctop-width) {
+    left: 220px;
+  }
 }

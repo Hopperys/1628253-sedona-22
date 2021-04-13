@@ -1,4 +1,22 @@
 .like__counter {
   font-weight: 700;
-  margin-left: 14px;
+  margin-left: 4px;
+  vertical-align: baseline;
+}
+
+.like__button {
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.like__svg {
+  fill: $black;
+  fill-opacity: 0.3;
+
+  @media (min-width: $desctop-width) {
+    fill: $white;
+    fill-opacity: 1;
+  }
 }
