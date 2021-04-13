@@ -134,6 +134,15 @@
   width: 320px;
   height: 260px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 800px;
+  }
 }
 
 .reasons__list {

@@ -28,20 +28,36 @@
 }
 
 .page-header__intro {
-  background-image: url("../img/bg-mobile.jpg");
+  background-image: url("../img/background/bg-mobile.jpg");
   background-repeat: no-repeat;
+  background-color: $bg-button;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/bg-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (max-width: $mobile-width-only) {
     margin-top: -28px;
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/bg-tablet.jpg");
+    background-image: url("../img/background/bg-tablet.jpg");
     background-position: top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/bg-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media (min-width: $desctop-width) {
-    background-image: url("../img/bg-desktop.jpg");
+    background-image: url("../img/background/bg-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/bg-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   &--form {
