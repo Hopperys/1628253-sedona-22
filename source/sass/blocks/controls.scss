@@ -1,0 +1,47 @@
+.controls__button {
+  background-color: transparent;
+  border: none;
+
+  &--repeat {
+    margin-left: 20px;
+    margin-right: 116px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 457px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-right: 594px;
+    }
+  }
+
+  &--fullscreen {
+    margin-left: 14px;
+  }
+}
+
+.controls__svg {
+  fill: $controls-color;
+
+  &:focus,
+  &:hover {
+    fill: $font-color-additional;
+  }
+
+  &:active {
+    fill: rgba($font-color-additional, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+
+    &:focus,
+    &:hover {
+      fill: rgba($white, 0.6);
+    }
+
+    &:active {
+      fill: rgba($white, 0.3);
+    }
+  }
+}
