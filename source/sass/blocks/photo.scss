@@ -112,6 +112,17 @@
 
   @media (min-width: $desctop-width) {
     margin-right: 20px;
+    margin-top: 27px;
+  }
+
+  &--short {
+    @media (min-width: $tablet-width) {
+      margin-right: 10px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-right: 30px;
+    }
   }
 }
 
