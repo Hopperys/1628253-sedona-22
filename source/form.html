@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icons/favicons/favicon.svg">
+    <link rel="apple-touch-icon" href="img/icons/favicons/favicon.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -26,8 +30,12 @@
             </li>
           </ul>
         </nav>
-        <a class="logo page-header__logo">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+        <a class="logo page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="logo__img" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+          </picture>
         </a>
         <div class="page-header__intro page-header__intro--form">
           <img class="page-header__img page-header__img--form" width="229" height="39" src="img/form-intro.svg" alt="Интро сайта Седона">
