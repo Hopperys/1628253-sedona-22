@@ -13,6 +13,28 @@
 .photo__img {
   display: block;
   object-fit: cover;
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 400px;
+  }
+
+  &--wide {
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      height: 400px;
+    }
+
+    @media (min-width: $desctop-width) {
+      width: 1200px;
+    }
+  }
 }
 
 .photo__title {
