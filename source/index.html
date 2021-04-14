@@ -116,7 +116,13 @@
               <p class="contact-us__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения&nbsp;гостиниц в седоне</p>
               <a class="contact-us__link button" href="search.html">Найти гостиницу</a>
             </div>
-            <div class="contact-us__map"></div>
+            <div class="contact-us__map">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/map/map-desktop.png 1x, img/map/map-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x">
+                <img class="contact-us__img" width="100%" height="100%" src="img/map/map-mobile.png" srcset="img/map/map-mobile@2x.png 2x" alt="Мы на карте">
+              </picture>
+            </div>
           </div>
         </section>
       </main>
