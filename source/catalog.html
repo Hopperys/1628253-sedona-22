@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icons/favicons/favicon.svg">
+    <link rel="apple-touch-icon" href="img/icons/favicons/favicon.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -26,8 +30,12 @@
             </li>
           </ul>
         </nav>
-        <a class="logo page-header__logo">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+        <a class="logo page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="logo__img" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+          </picture>
         </a>
         <div class="page-header__intro page-header__intro--form">
           <img class="page-header__img page-header__img--form" width="229" height="39" src="img/form-intro.svg" alt="Интро сайта Седона">
@@ -47,7 +55,11 @@
               <div class="photo__wrapper">
                 <h3 class="visually-hidden">Виды седоны</h3>
                 <a class="photo__link" href="#">
-                  <img class="photo__img" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Красивый закат">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo/catalog/photo-1-desktop.jpg 1x, img/photo/catalog/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo/catalog/photo-1-tablet.jpg 1x, img/photo/catalog/photo-1-tablet@2x.jpg 2x">
+                    <img class="photo__img photo__img--wide" width="280" height="280" src="img/photo/catalog/photo-1-mobile.jpg" srcset="img/photo/catalog/photo-1-mobile@2x.jpg 2x" alt="Красивый закат">
+                  </picture>
                 </a>
                 <div class="photo__inner">
                   <div class="photo__info">
@@ -69,14 +81,18 @@
               <div class="photo__wrapper">
                 <h3 class="visually-hidden">Виды седоны</h3>
                 <a class="photo__link" href="#">
-                  <img class="photo__img" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная флора">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo/catalog/photo-2-desktop.jpg 1x, img/photo/catalog/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo/catalog/photo-2-tablet.jpg 1x, img/photo/catalog/photo-2-tablet@2x.jpg 2x">
+                    <img class="photo__img" width="280" height="280" src="img/photo/catalog/photo-2-mobile.jpg" srcset="img/photo/catalog/photo-2-mobile@2x.jpg 2x" alt="Местная флора">
+                  </picture>
                 </a>
                 <div class="photo__inner">
                   <div class="photo__info">
                     <p class="photo__title">Местная растительность</p>
                     <p class="photo__author">Автор фото: Сергей</p>
                   </div>
-                  <div class="like photo__like">
+                  <div class="like photo__like photo__like--short">
                     <button class="like__button" type="button" aria-label="Мне нравится">
                       <svg class="like__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
@@ -91,14 +107,18 @@
               <div class="photo__wrapper">
                 <h3 class="visually-hidden">Виды седоны</h3>
                 <a class="photo__link" href="#">
-                  <img class="photo__img" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога в лесу">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo/catalog/photo-3-desktop.jpg 1x, img/photo/catalog/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo/catalog/photo-3-tablet.jpg 1x, img/photo/catalog/photo-3-tablet@2x.jpg 2x">
+                    <img class="photo__img" width="280" height="280" src="img/photo/catalog/photo-3-mobile.jpg" srcset="img/photo/catalog/photo-3-mobile@2x.jpg 2x" alt="Дорога в лесу">
+                  </picture>
                 </a>
                 <div class="photo__inner photo__inner--dark">
                   <div class="photo__info">
                     <p class="photo__title">Дорога на север</p>
                     <p class="photo__author">Автор фото: Петр</p>
                   </div>
-                  <div class="like photo__like">
+                  <div class="like photo__like photo__like--short">
                     <button class="like__button" type="button" aria-label="Мне нравится">
                       <svg class="like__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
@@ -113,14 +133,18 @@
               <div class="photo__wrapper">
                 <h3 class="visually-hidden">Виды седоны</h3>
                 <a class="photo__link" href="#">
-                  <img class="photo__img" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo/catalog/photo-4-desktop.jpg 1x, img/photo/catalog/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo/catalog/photo-4-tablet.jpg 1x, img/photo/catalog/photo-4-tablet@2x.jpg 2x">
+                    <img class="photo__img" width="280" height="280" src="img/photo/catalog/photo-4-mobile.jpg" srcset="img/photo/catalog/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+                  </picture>
                 </a>
                 <div class="photo__inner">
                   <div class="photo__info">
                     <p class="photo__title">Мост дьявола</p>
                     <p class="photo__author">Автор фото: Антон</p>
                   </div>
-                  <div class="like photo__like">
+                  <div class="like photo__like photo__like--short">
                     <button class="like__button" type="button" aria-label="Мне нравится">
                       <svg class="like__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
@@ -141,7 +165,11 @@
               <p class="video__text">Смотрите видеопрезентацию и скорее&nbsp;за&nbsp;билетами, пока они не подорожали в очередной раз!</p>
             </div>
             <div class="player video__player">
-              <img class="player__img" src="img/video-mobile.jpg" width="320" height="201" alt="Здесь должен быть видео плеер.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo/catalog/video-desktop.jpg 1x, img/photo/catalog/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo/catalog/video-tablet.jpg 1x, img/photo/catalog/video-tablet@2x.jpg 2x">
+                <img class="player__img" width="320" height="201" src="img/photo/catalog/video-mobile.jpg" srcset="img/photo/catalog/video-mobile@2x.jpg 2x" alt="Здесь должен быть видео плеер.">
+              </picture>
               <div class="player__inner">
                 <div class="player__bar"></div>
                 <div class="player__toggle"></div>

@@ -10,6 +10,7 @@
 
   @media (min-width: $desctop-width) {
     max-width: $desctop-width;
+    margin-bottom: 100px;
   }
 }
 
@@ -31,7 +32,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-top: 60px;
+    margin-top: 56px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-top: 64px;
   }
 }
 
@@ -40,6 +45,10 @@
   line-height: 24px;
   color: $font-color-additional;
   margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 34px;
+  }
 
   @media (min-width: $desctop-width) {
     margin-top: 32px;
@@ -52,7 +61,7 @@
   @media (min-width: $tablet-width) {
     margin-left: 60px;
     margin-right: 60px;
-    margin-top: 74px;
+    margin-top: 80px;
   }
 
   @media (min-width: $desctop-width) {
