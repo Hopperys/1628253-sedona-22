@@ -55,11 +55,11 @@
               <legend class="legend-title fieldset__title fieldset__title--name">Представьтесь:</legend>
               <label class="label-text fieldset__label fieldset__label--name">
                 <span class="label-text__span">Имя*:</span>
-                <input class="label-text__input label-text__input--name" type="text" name="name" placeholder="Петр" required>
+                <input class="label-text__input label-text__input--name" type="text" name="name" id="first" placeholder="Петр" required>
               </label>
               <label class="label-text fieldset__label fieldset__label--name">
                 <span class="label-text__span">Фамилия*:</span>
-                <input class="label-text__input label-text__input--name" type="text" name="second" placeholder="Иванов" required>
+                <input class="label-text__input label-text__input--name" type="text" name="second" id="second" placeholder="Иванов" required>
               </label>
               <label class="label-text fieldset__label fieldset__label--name">
                 <span class="label-text__span">Отчество:</span>
@@ -72,11 +72,11 @@
                 <label class="label-text label-text--phone fieldset__label fieldset__label--contacts">
                   <span class="label-text__span label-text__phone label-text__phone--long label-text__span--contacts">Контактный телефон*:</span>
                   <span class="label-text__span label-text__phone label-text__phone--short label-text__span--contacts">Телефон*:</span>
-                  <input class="label-text__input label-text__input--contacts" type="tel" name="phone" placeholder="Введите телефон" required>
+                  <input class="label-text__input label-text__input--contacts" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
                 </label>
                 <label class="label-text label-text--email fieldset__label fieldset__label--contacts">
                   <span class="label-text__span label-text__span--contacts">Электронная почта*:</span>
-                  <input class="label-text__input label-text__input--contacts" type="email" name="email" placeholder="Введите e-mail" required>
+                  <input class="label-text__input label-text__input--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                 </label>
               </div>
             </fieldset>
@@ -178,5 +178,6 @@
     </section>
 
     <script src="js/navbar.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
