@@ -64,6 +64,12 @@
       }
     }
   }
+
+  &--error {
+    &::after {
+      background-color: $error-color;
+    }
+  }
 }
 
 .label-text__span {
@@ -126,6 +132,10 @@
     padding-top: 13px;
     padding-bottom: 12px;
     outline: none;
+  }
+
+  &--error {
+    background-color: $error-color;
   }
 }
 
