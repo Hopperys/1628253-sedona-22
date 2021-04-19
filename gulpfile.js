@@ -3,6 +3,9 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const htmlmin = require("gulp-htmlmin");
+const csso = require("gulp-csso");
+const rename = require("gulp-rename");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
@@ -17,11 +20,24 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+// Html
+
+const html = () => {
+  return gulp.src("source/*.html")
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest("source"));
+}
+
+exports.html = html;
 
 // Server
 

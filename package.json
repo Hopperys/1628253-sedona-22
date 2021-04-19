@@ -7,8 +7,11 @@
     "autoprefixer": "10.2.5",
     "browser-sync": "2.26.14",
     "gulp": "4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "3.0.0",
     "postcss": "8.2.8",
@@ -20,7 +23,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "html": "gulp html"
   },
   "browserslist": [
     "last 2 versions",
