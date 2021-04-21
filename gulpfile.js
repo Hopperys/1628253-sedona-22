@@ -9,6 +9,7 @@ const rename = require("gulp-rename");
 const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
+const concat = require("gulp-concat");
 const del = require("del");
 const webp = require('gulp-webp');
 const autoprefixer = require("autoprefixer");
@@ -48,10 +49,11 @@ exports.html = html;
 
 const script = () => {
   return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(sourcemap.init())
+    .pipe(concat("main.js"))
     .pipe(terser())
-    .pipe(rename({
-      suffix: ".min"
-    }))
+    .pipe(rename("main.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -108,6 +110,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
+    "source/*.webmanifest",
   ], {
     base: "source"
   })
