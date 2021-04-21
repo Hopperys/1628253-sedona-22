@@ -6,10 +6,10 @@ if (form) {
   const phone = document.getElementById("phone");
   const email = document.getElementById("email");
 
-  const emailText = document.querySelector(".label-text--email");
-  const phoneText = document.querySelector(".label-text--phone");
+  const emailText = form.querySelector(".label-text--email");
+  const phoneText = form.querySelector(".label-text--phone");
 
-  const buttonSubmit = document.querySelector(".form__button");
+  const buttonSubmit = form.querySelector(".form__button");
 
   const popupError = document.querySelector(".popup--failure");
   const buttonError = document.querySelector(".popup__button--failure");
