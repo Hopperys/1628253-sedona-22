@@ -96,6 +96,12 @@
     max-height: 400px;
     overflow-y: auto;
   }
+
+  &--small {
+    @media (min-width: $desctop-width) {
+      max-height: 267px;
+    }
+  }
 }
 
 .photo__like {

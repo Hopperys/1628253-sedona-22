@@ -79,7 +79,7 @@
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin-top: 84px;
+      margin-top: 0;
       margin-left: 78px;
       margin-right: 55px;
     }
@@ -106,11 +106,11 @@
 
   &--contacts {
     @media (min-width: $tablet-width) {
-      margin-top: 34px;
+      margin-top: 10px;
     }
 
     @media (min-width: $desctop-width) {
-      margin-top: 85px;
+      margin-top: 60px;
       justify-content: space-between;
     }
   }
@@ -132,18 +132,11 @@
     margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
-      position: absolute;
-      padding-top: 0;
-      margin-top: -10px;
-      margin-left: 130px;
-      padding-left: 56px;
-      padding-right: 60px;
-    }
-
-    @media (min-width: $desctop-width) {
-      margin-left: 284px;
-      padding-left: 56px;
-      padding-right: 60px;
+      position: relative;
+      margin-bottom: 0;
+      top: -12px;
+      padding: 0 60px 0 56px;
+      max-width: 308px;
     }
   }
 
@@ -166,17 +159,13 @@
     padding-top: 16px;
 
     @media (min-width: $tablet-width) {
-      position: absolute;
+      position: relative;
       padding-top: 0;
-      margin-top: -28px;
-      margin-left: 122px;
+      margin-bottom: 30px;
+      top: -30px;
       max-width: 308px;
       padding-left: 46px;
       padding-right: 46px;
-    }
-
-    @media (min-width: $desctop-width) {
-      margin-left: 280px;
     }
   }
 
@@ -184,16 +173,12 @@
     margin-bottom: 15px;
 
     @media (min-width: $tablet-width) {
-      position: absolute;
+      position: relative;
       padding-top: 0;
-      margin-top: -11px;
-      margin-left: 182px;
+      top: -12px;
       padding-left: 76px;
       padding-right: 80px;
-    }
-
-    @media (min-width: $desctop-width) {
-      margin-left: 398px;
+      max-width: 308px;
     }
   }
 }
@@ -272,7 +257,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   @media (min-width: $desctop-width) {
