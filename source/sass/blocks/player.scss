@@ -17,15 +17,22 @@
   }
 }
 
+.player__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: -46px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin: -93px 0 0 0;
+  }
+}
+
 .player__inner {
   width: 280px;
   background-color: rgba($black, 0.6);
   height: 45px;
-  position: absolute;
-  bottom: 0;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -34,7 +41,6 @@
 
   @media (min-width: $desctop-width) {
     width: 800px;
-    margin: 0;
   }
 }
 
@@ -42,14 +48,10 @@
   width: 235px;
   height: 3px;
   background-color: rgba($white, 0.2);
-  margin-top: 22px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 22px auto 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin-top: 45px;
-    margin-left: 93px;
-    margin-right: 0;
+    margin: 45px 0 0 93px;
     width: 389px;
   }
 
@@ -69,5 +71,24 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 204px;
+  }
+}
+
+.player__controls {
+  background-color: $input-color;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  margin-bottom: 78px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    position: absolute;
+    left: 9px;
+    bottom: 15px;
+    margin: 0;
+  }
+
+  @media (min-width: $desctop-width) {
+    left: 20px;
   }
 }
