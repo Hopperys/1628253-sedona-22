@@ -18,9 +18,8 @@
     &--contacts {
       order: 3;
       grid-column: 1/-1;
-      margin-right: 60px;
+      margin: 0 60px;
       padding-bottom: 50px;
-      margin-left: 60px;
     }
 
     &--impression {
@@ -32,8 +31,7 @@
     &--visited {
       order: 4;
       grid-column: 1/-1;
-      margin-right: 60px;
-      margin-left: 60px;
+      margin: 0 60px;
       padding-bottom: 36px;
     }
 
@@ -50,8 +48,7 @@
     }
 
     &--contacts {
-      margin-left: 120px;
-      margin-right: 120px;
+      margin: 0 120px;
       padding-bottom: 0;
     }
 
@@ -60,8 +57,7 @@
     }
 
     &--visited {
-      margin-left: 120px;
-      margin-right: 120px;
+      margin: 0 120px;
     }
   }
 }
@@ -75,22 +71,19 @@
   &--visited {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin-top: 0;
-      margin-left: 78px;
-      margin-right: 55px;
+      margin: 0 55px 0 78px;
     }
 
     @media (min-width: $desctop-width) {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      margin-left: 80px;
-      margin-right: 0;
       justify-content: space-between;
+      margin: 0 0 0 80px;
     }
   }
 
@@ -111,7 +104,6 @@
 
     @media (min-width: $desctop-width) {
       margin-top: 60px;
-      justify-content: space-between;
     }
   }
 }
@@ -119,6 +111,15 @@
 .fieldset__title {
   padding-top: 20px;
   background-color: $white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 
   &--name {
     @media (min-width: $tablet-width) {
@@ -133,7 +134,7 @@
 
     @media (min-width: $tablet-width) {
       position: relative;
-      margin-bottom: 0;
+      margin: 0 auto;
       top: -12px;
       padding: 0 60px 0 56px;
       max-width: 308px;
@@ -160,12 +161,10 @@
 
     @media (min-width: $tablet-width) {
       position: relative;
-      padding-top: 0;
-      margin-bottom: 30px;
       top: -30px;
       max-width: 308px;
-      padding-left: 46px;
-      padding-right: 46px;
+      margin: 0 auto 30px auto;
+      padding: 0 46px;
     }
   }
 
@@ -179,6 +178,7 @@
       padding-left: 76px;
       padding-right: 80px;
       max-width: 308px;
+      margin: 0 auto 15px auto;
     }
   }
 }
@@ -216,13 +216,10 @@
 }
 
 .fieldset__radio {
-  margin-bottom: 31px;
-  margin-left: 98px;
-  margin-top: 12px;
+  margin: 12px 0 31px 98px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-    margin-left: 78px;
+    margin: 12px 0 40px 78px;
   }
 
   &:last-of-type {
@@ -235,8 +232,7 @@
 }
 
 .fieldset__checkbox {
-  margin-bottom: 54px;
-  margin-left: 98px;
+  margin: 0 0 54px 98px;
 
   &:last-of-type {
     margin-bottom: 40px;
