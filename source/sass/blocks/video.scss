@@ -26,8 +26,6 @@
 
 .video__title {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   margin-top: 32px;
 
   @media (min-width: $tablet-width) {
@@ -59,9 +57,7 @@
   margin-top: 34px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 80px;
+    margin: 80px 60px 0 60px;
   }
 
   @media (min-width: $desctop-width) {

@@ -30,7 +30,6 @@
 .page-footer__slogan {
   font-weight: 700;
   font-size: 21px;
-  line-height: 26px;
   margin-top: 0;
   margin-bottom: 34px;
 
@@ -45,9 +44,7 @@
 
 .page-footer__copyright {
   font-size: 14px;
-  line-height: 26px;
-  margin-top: 34px;
-  margin-bottom: 0;
+  margin: 34px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 22px;
