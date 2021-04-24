@@ -31,14 +31,12 @@
   display: inline-flex;
   justify-content: center;
   width: 280px;
-  padding-top: 14px;
-  padding-bottom: 18px;
-  margin-bottom: 49px;
-  margin-top: 27px;
+  padding: 14px 0 18px 0;
+  margin: 28px 0 49px 0;
 
   @media (min-width: $tablet-width) {
     width: 458px;
-    margin-top: 41px;
+    margin-top: 43px;
   }
 
   @media (min-width: $desctop-width) {

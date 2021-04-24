@@ -65,9 +65,8 @@
   height: 9px;
   border-radius: 50%;
   background-color: $white;
-  margin-left: 58px;
-  margin-top: -6px;
   cursor: pointer;
+  margin: -6px 0 0 58px;
 
   @media (min-width: $tablet-width) {
     margin-left: 204px;
@@ -76,8 +75,7 @@
 
 .player__controls {
   background-color: $input-color;
-  padding-top: 22px;
-  padding-bottom: 19px;
+  padding: 22px 0 19px 0;
   margin-bottom: 78px;
 
   @media (min-width: $tablet-width) {

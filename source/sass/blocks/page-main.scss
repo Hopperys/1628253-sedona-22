@@ -98,10 +98,7 @@
     @media (min-width: $tablet-width) {
       border-bottom: none;
       max-width: 435px;
-      margin-top: 32px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 64px;
+      margin: 32px auto 64px auto;
     }
 
     @media (min-width: $desctop-width) {
@@ -110,9 +107,7 @@
   }
 
   &--catalog {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
+    padding: 0 20px 30px 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 47px;

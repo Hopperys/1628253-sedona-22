@@ -45,8 +45,7 @@
 }
 
 .photo__author {
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
 
   @media (min-width: $desctop-width) {
     margin-bottom: 20px;
@@ -54,12 +53,10 @@
 }
 
 .photo__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
 
   @media (min-width: $desctop-width) {
@@ -72,10 +69,7 @@
     display: flex;
     justify-content: space-between;
     background-color: $input-color;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 4px;
-    padding-bottom: 17px;
+    padding: 4px 20px 17px 20px;
   }
 
   &--dark {
@@ -112,13 +106,11 @@
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin: 20px 0 0 0;
   }
 
   @media (min-width: $desctop-width) {
-    margin-right: 20px;
-    margin-top: 27px;
+    margin: 20px 27px 0 0;
   }
 
   &--short {

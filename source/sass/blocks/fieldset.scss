@@ -248,12 +248,10 @@
 }
 
 .fieldset__textarea {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 60px;
-    margin-top: 30px;
+    margin: 30px 20px 0 60px;
   }
 
   @media (min-width: $desctop-width) {
