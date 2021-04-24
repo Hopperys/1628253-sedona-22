@@ -38,7 +38,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-top: -28px;
+    margin-top: -30px;
   }
 
   @media (min-width: $tablet-width) {
@@ -62,6 +62,10 @@
 
   &--form {
     background-position: bottom;
+
+    @media (max-width: $mobile-width-only) {
+      margin-top: -34px;
+    }
 
     @media (min-width: $tablet-width) {
       background-position: bottom;

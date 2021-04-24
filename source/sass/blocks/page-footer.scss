@@ -14,12 +14,11 @@
 .page-footer__wrapper {
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 23px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 36px;
   }
 
   @media (min-width: $desctop-width) {
