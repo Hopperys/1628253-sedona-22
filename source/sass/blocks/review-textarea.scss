@@ -15,6 +15,17 @@
     color: $black;
   }
 
+  &:hover {
+    background-color: $bg-disabled;
+  }
+
+  &:focus {
+    background: $white;
+    border: 4px solid $bg-disabled;
+    outline: none;
+    padding: 11px 0 0 16px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 625px;
   }
