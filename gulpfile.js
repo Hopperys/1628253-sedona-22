@@ -11,7 +11,7 @@ const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const concat = require("gulp-concat");
 const del = require("del");
-const webp = require('gulp-webp');
+const webp = require("gulp-webp");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
