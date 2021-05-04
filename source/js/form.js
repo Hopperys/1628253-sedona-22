@@ -1,20 +1,20 @@
-const form = document.querySelector(".form");
+var form = document.querySelector(".form");
 
 if (form) {
-  const firstName = document.getElementById("first");
-  const secondName = document.getElementById("second");
-  const phone = document.getElementById("phone");
-  const email = document.getElementById("email");
+  var firstName = document.getElementById("first");
+  var secondName = document.getElementById("second");
+  var phone = document.getElementById("phone");
+  var email = document.getElementById("email");
 
-  const emailText = form.querySelector(".label-text--email");
-  const phoneText = form.querySelector(".label-text--phone");
+  var emailText = form.querySelector(".label-text--email");
+  var phoneText = form.querySelector(".label-text--phone");
 
-  const buttonSubmit = form.querySelector(".form__button");
+  var buttonSubmit = form.querySelector(".form__button");
 
-  const popupError = document.querySelector(".popup--failure");
-  const buttonError = document.querySelector(".popup__button--failure");
-  const popupSuccess = document.querySelector(".popup--success");
-  const buttonSuccess = document.querySelector(".popup__button--success");
+  var popupError = document.querySelector(".popup--failure");
+  var buttonError = document.querySelector(".popup__button--failure");
+  var popupSuccess = document.querySelector(".popup--success");
+  var buttonSuccess = document.querySelector(".popup__button--success");
 
   function errorRemove() {
     firstName.classList.remove("label-text__input--error");
