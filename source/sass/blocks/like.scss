@@ -1,6 +1,10 @@
 .like__counter {
   font-weight: 700;
   vertical-align: baseline;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 5px;
+  }
 }
 
 .like__button {

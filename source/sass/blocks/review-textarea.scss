@@ -2,9 +2,9 @@
   width: 256px;
   height: 141px;
   resize: none;
-  padding-top: 17px;
-  padding-left: 21px;
-  border: none;
+  padding-top: 11px;
+  padding-left: 16px;
+  border: 4px solid transparent;
   background-color: $input-color;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -23,7 +23,6 @@
     background: $white;
     border: 4px solid $bg-disabled;
     outline: none;
-    padding: 11px 0 0 16px;
   }
 
   @media (min-width: $tablet-width) {
