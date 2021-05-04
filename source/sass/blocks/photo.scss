@@ -42,13 +42,17 @@
   margin-top: 11px;
   font-weight: 700;
   margin-bottom: 0;
+
+  @media (min-width: $desctop-width) {
+    margin-top: 15px;
+  }
 }
 
 .photo__author {
   margin: 0;
 
   @media (min-width: $desctop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -110,7 +114,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    margin: 20px 27px 0 0;
+    margin: 28px 27px 0 0;
   }
 
   &--short {
